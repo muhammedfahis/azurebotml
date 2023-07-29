@@ -33,7 +33,7 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()        
         self.wfile.write(resp.encode('utf-8'))
 
-def run_server(port=443):
+def run_server(port=80):
     server_address = ('', port)
     httpd = HTTPServer(server_address, MyRequestHandler)
     print(f"Server running on http://localhost:{port}/")
