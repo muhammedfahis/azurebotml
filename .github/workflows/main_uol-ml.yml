@@ -65,5 +65,5 @@ jobs:
       - name: 'install scikit-learn'
         run: pip install scikit-learn
       - name: 'Run project'
-        run: python main.py
+        run: nohup python main.py &
       
