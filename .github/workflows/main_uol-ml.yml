@@ -62,6 +62,8 @@ jobs:
           app-name: 'uol-ml'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77DD3D730DD248D59D62DA281099432A }}
+      - name: 'install scikit-learn'
+        run: pip install scikit-learn
       - name: 'Run project'
         run: python main.py
       
